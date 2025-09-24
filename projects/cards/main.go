@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 func main() {
 	randomString := "Hello, World!"
@@ -14,7 +16,7 @@ func main() {
 	println("------- Deal 2 -------")
 	deal2.Print()
 	cardDeck.Save("my_cards.txt", cardDeck.Convert2Byte(), 0666)
-	byteSlice, err := ReadFile("my_cards.txt");
+	byteSlice, err := ReadFile("my_cards.txt")
 
 	if err != nil {
 		fmt.Println("Error:", err)

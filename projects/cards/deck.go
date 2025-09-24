@@ -40,21 +40,21 @@ func (d deck) Save(fileName string, data []byte, perm os.FileMode) error {
 }
 
 func (d deck) ToString() string {
-	result := "";
+	result := ""
 
-	for _, card:= range d {
+	for _, card := range d {
 		result += card + ","
 	}
 
-	return result;
+	return result
 }
 
 func (d deck) Convert2Byte() []byte {
-	result := []byte{};
+	result := []byte{}
 	for _, card := range d {
 		result = append(result, []byte(card)...)
 	}
-	return result;
+	return result
 }
 
 func ReadFile(fileName string) ([]byte, error) {

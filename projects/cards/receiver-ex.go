@@ -9,7 +9,7 @@ type cards string
 
 // In this case, the receiver function printDeck is associated with the deck type. This means that you can call the printDeck function on any variable of type deck using the dot notation, like cards.printDeck() in the main function.
 
-func (d decks) print(){
+func (d decks) print() {
 	for _, card := range d {
 		println(card)
 	}
